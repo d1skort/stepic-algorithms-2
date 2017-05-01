@@ -51,7 +51,6 @@ def main():
     m = int(sys.stdin.readline())
 
     queue = MaximumQueue()
-    ret = []
 
     for i, item in enumerate(array):
         queue.enqueue(item)
