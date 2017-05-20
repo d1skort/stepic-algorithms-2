@@ -25,7 +25,7 @@ def correct(tree, root):
     if tree[root]['left'] != -1:
         tree_correct = root_key > get_max(tree, tree[root]['left'])
     if tree_correct and tree[root]['right'] != -1:
-        tree_correct = root_key < get_min(tree, tree[root]['right'])
+        tree_correct = root_key <= get_min(tree, tree[root]['right'])
 
     if tree_correct and tree[root]['left'] != -1:
         tree_correct = correct(tree, tree[root]['left'])
